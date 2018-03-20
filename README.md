@@ -10,7 +10,7 @@ The code provided extracts features to train a random forest for classification 
 
 a) To extract features from the ptdb and create the training database
 > python3 pitch.py -p 0 -a 0 -f 10 ptdb_tug.gui
--a is "action" and 0 is to perform feature extraction
+*-a is "action" and 0 is to perform feature extraction
 
 b) Then, to train and create a random forest model
 >run the "VoicePitchTrainer.java" located in .\VoicePitchEstimator\src\voicepitchestimator 
@@ -25,7 +25,7 @@ d) Then, to test the random forest with this database
 
 e) Then, to generate the f0 files
 > python3 pitch.py -a 1 fda_ue.gui
--a is "action" and 1 is to create f0 files
+*-a is "action" and 1 is to create f0 files
 
 f) Finally, to evaluate performance
 > pitch_compare fda_ue.gui
@@ -40,6 +40,6 @@ a) To extract features from the ptdb and create the training database
 b) Then, to train and test the random forest with this database
 >run the "VoicePitchCrossValidated.java" located in .\VoicePitchEstimator\src\voicepitchestimator 
 * Same issue about weka package
-** The crossvalidated performs the evaluation so no need to run the python_compare afterwards
+* The crossvalidated performs the evaluation so no need to run the python_compare afterwards
 
 My experiments and report were done using the second approach using the fda_ue.gui database.
