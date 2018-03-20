@@ -3,6 +3,7 @@
 
 Assignment: Pitch and voicing estimation  
 Professor: José Adrián Rodríguez Fonollosa
+
 Student: Alejandro Casar Berazaluce
 
 The code provided extracts features to train a random forest for classification and has 2 ways of being used. But both require data to be in a hirerarchy as specified in the gui files. (I do not upload the data since you already have it and it just wastes space)
@@ -10,6 +11,7 @@ The code provided extracts features to train a random forest for classification 
 
 a) To extract features from the ptdb and create the training database
 > python3 pitch.py -p 0 -a 0 -f 10 ptdb_tug.gui
+
 *-a is "action" and 0 is to perform feature extraction
 
 b) Then, to train and create a random forest model
@@ -25,6 +27,7 @@ d) Then, to test the random forest with this database
 
 e) Then, to generate the f0 files
 > python3 pitch.py -a 1 fda_ue.gui
+
 *-a is "action" and 1 is to create f0 files
 
 f) Finally, to evaluate performance
